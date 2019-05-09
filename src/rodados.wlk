@@ -9,19 +9,23 @@ class RenaultKwid{
 	var tanqueAdicional=false
 	const property color="azul"
 	method capacidad() {
-		if(not tanqueAdicional){return 3}
-		else{return 4}
+		return if(tanqueAdicional){return 3}else{4}
 	}
 	method velocidadMaxima() {
-		if(not tanqueAdicional){return 120}
-		else{return 110}
+		return if(tanqueAdicional){120}else{110} 
 	}
 	method peso(){
-		if(not tanqueAdicional){return 1300}
-		else{return 1200}
+		return if(tanqueAdicional){1300}else{1200}
 	}
+	method ponerTanque(){tanqueAdicional=true}
+	method sacarTanque(){tanqueAdicional=false}
 }	
-
+class AutoEspecial{
+	var property capacidad
+	var property velocidadMaxima
+	var property peso
+	var property color
+}
 object trafic{
 	const property color="Blanco"
 	var property motor
