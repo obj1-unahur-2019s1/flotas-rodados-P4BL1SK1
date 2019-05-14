@@ -2,9 +2,11 @@ class Corsa {
 	var property color
 	method capacidad() {return 4}
 	method velocidadMaxima() {return 150}
-	method peso() {return 1300}
+	method peso() {return 1300} 
 }
 
+
+/////////////////////////////////////////////////
 class RenaultKwid{
 	var tanqueAdicional=false
 	const property color="azul"
@@ -19,13 +21,18 @@ class RenaultKwid{
 	}
 	method ponerTanque(){tanqueAdicional=true}
 	method sacarTanque(){tanqueAdicional=false}
-}	
+}
+
+
+/////////////////////////////////////////////////	
 class AutoEspecial{
 	var property capacidad
 	var property velocidadMaxima
 	var property peso
 	var property color
 }
+
+/////////////////////////////////////////////////
 object trafic{
 	const property color="Blanco"
 	var property motor

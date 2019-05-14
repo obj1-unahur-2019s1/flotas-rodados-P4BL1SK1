@@ -1,0 +1,10 @@
+import rodados.*
+import dependencias.*
+import pedidos.*
+
+
+test "viaje" {
+	var cachito=new Corsa(color="rojo")
+	var viaje=new Pedido(distancia=90,tiempoMaximo=8,pasajeros=4,coloresIncompatibles=#{"verde","negro"})
+	assert.equals(viaje.puedeSatisfacer(cachito),true)
+}
