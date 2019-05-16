@@ -22,4 +22,5 @@ class Dependencia{
 		return pedidos.filter{pedido=>pedido.puedeSatisfacer()}
 	}
 	method pedidoInsatisfecho() {return not pedidos.filter{}}
+	method dsf(){ var num=100; num=num-num%90; return num}
 }
